@@ -32,7 +32,7 @@ COPY pyproject.toml .
 COPY uv.lock .
 
 # Install Python dependencies
-RUN uv sync --frozen
+RUN uv sync
 
 # Copy the webservice code
 COPY misc/webservice.py .
