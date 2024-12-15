@@ -22,7 +22,7 @@ from flask import Flask, Response, request, send_from_directory
 from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
-app.secret_key = "secret"
+app.secret_key = "aNAJKbd82nAJkndQMOhwl"
 app.config['MAX_CONTENT_LENGTH'] = 50_000_000
 app.config.from_envvar("OCRMYPDF_WEBSERVICE_SETTINGS", silent=True)
 

@@ -5,7 +5,7 @@ requires = ["hatchling", "hatch-vcs"]
 build-backend = "hatchling.build"
 
 [project]
-name = "ocrmypdf"
+name = "ocrmypdf_build"
 dynamic = ["version"]
 description = "OCRmyPDF adds an OCR text layer to scanned PDF files, allowing them to be searched"
 readme = "README.md"
@@ -13,14 +13,17 @@ license = { text = "MPL-2.0" }
 requires-python = ">=3.10"
 dependencies = [
   "deprecation>=2.1.0",
+  "flask>=3.1.0",
   "img2pdf>=0.5",
+  "ocrmypdf>=16.7.0",
   "packaging>=20",
   "pdfminer.six>=20220319",
-  "pi-heif",                # Heif image format - maintainers: if this is removed, it will NOT break
+  "pi-heif", # Heif image format - maintainers: if this is removed, it will NOT break
   "pikepdf>=8.10.1",
   "Pillow>=10.0.1",
   "pluggy>=1",
   "rich>=13",
+  "werkzeug>=3.1.3",
 ]
 authors = [{ name = "James R. Barlow", email = "james@purplerock.ca" }]
 classifiers = [
