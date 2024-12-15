@@ -820,20 +820,11 @@ wheels = [
 
 [[package]]
 name = "ocrmypdf-build"
-version = "0.1.dev3926+gb7c3ea7.d20241215"
+version = "0.1.dev3929+gafbf21d.d20241215"
 source = { editable = "." }
 dependencies = [
-    { name = "deprecation" },
     { name = "flask" },
-    { name = "img2pdf" },
     { name = "ocrmypdf" },
-    { name = "packaging" },
-    { name = "pdfminer-six" },
-    { name = "pi-heif" },
-    { name = "pikepdf" },
-    { name = "pillow" },
-    { name = "pluggy" },
-    { name = "rich" },
     { name = "werkzeug" },
 ]
 
@@ -877,18 +868,10 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "coverage", extras = ["toml"], marker = "extra == 'test'", specifier = ">=6.2" },
-    { name = "deprecation", specifier = ">=2.1.0" },
     { name = "flask", specifier = ">=3.1.0" },
     { name = "flask", marker = "extra == 'webservice'", specifier = ">=2.0.1" },
     { name = "hypothesis", marker = "extra == 'test'", specifier = ">=6.36.0" },
-    { name = "img2pdf", specifier = ">=0.5" },
     { name = "ocrmypdf", specifier = ">=16.7.0" },
-    { name = "packaging", specifier = ">=20" },
-    { name = "pdfminer-six", specifier = ">=20220319" },
-    { name = "pi-heif" },
-    { name = "pikepdf", specifier = ">=8.10.1" },
-    { name = "pillow", specifier = ">=10.0.1" },
-    { name = "pluggy", specifier = ">=1" },
     { name = "pymupdf", marker = "extra == 'extended-test'", specifier = ">=1.19.1" },
     { name = "pytest", marker = "extra == 'test'", specifier = ">=6.2.5" },
     { name = "pytest-cov", marker = "extra == 'test'", specifier = ">=3.0.0" },
@@ -896,7 +879,6 @@ requires-dist = [
     { name = "python-dotenv", marker = "extra == 'watcher'" },
     { name = "python-xmp-toolkit", marker = "extra == 'test'", specifier = "==2.0.1" },
     { name = "reportlab", marker = "extra == 'test'", specifier = ">=3.6.8" },
-    { name = "rich", specifier = ">=13" },
     { name = "sphinx", marker = "extra == 'docs'" },
     { name = "sphinx-issues", marker = "extra == 'docs'" },
     { name = "sphinx-rtd-theme", marker = "extra == 'docs'" },
