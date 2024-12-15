@@ -28,14 +28,10 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /app
 
 # Copy requirements first to leverage Docker cache
-COPY pyproject.toml .
-COPY uv.lock .
+COPY requirements.txt .
 
 # Install Python dependencies
-RUN uv sync
-
-# Copy the webservice code
-COPY misc/webservice.py .
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Expose the port the app runs on
 EXPOSE 5000
